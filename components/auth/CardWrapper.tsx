@@ -48,3 +48,25 @@ const CardWrapper: React.FC<CardWrapperProps> = ({
 };
 
 export default CardWrapper;
+
+// const CardWrapper: React.FC<CardWrapperProps> = ({
+//   children,
+//   headerLabel,
+//   backButtonlabel,
+//   backButtonHref,
+//   showSocial,
+// }: CardWrapperProps) => {
+//   return (
+//     <Card className="w-[400px] shadow-md">
+//       <CardHeader>
+//         <Header label={headerLabel} />
+//       </CardHeader>
+//       <CardContent>{children}</CardContent>
+//       <CardFooter>
+//         {showSocial && <Social />}
+//         <BackButton label={backButtonlabel} href={backButtonHref} />
+//       </CardFooter>
+//     </Card>
+//   );
+// };
+// export default CardWrapper;

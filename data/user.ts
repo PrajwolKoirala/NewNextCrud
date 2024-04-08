@@ -22,3 +22,13 @@ export const getUserByID = async (id:string) => {
 
 };
 
+export const getAllUsers = async () => {
+   try {
+       const users = await db.user.findMany();
+       return users;
+   } catch (error) {
+       console.error('Error fetching users:', error);
+       return null;
+   }
+};
+
